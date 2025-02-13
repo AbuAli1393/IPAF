@@ -66,21 +66,30 @@ bash
 ipaf scan recon --target 10.0.2.0/24 --tools subfinder,amass
 
 # 2. Vulnerability Scan
+
 ipaf scan vuln --target 10.0.2.1-100 --profile rapid
 
 # 3. Exploitation
+
 ipaf scan exploit --target 10.0.2.5 --module metasploit
 
 # 4. Generate Report
+
 ipaf report generate --format html,pdf
+
 Web App Test:
+
 bash
 
 ipaf scan web --url https://example.com \
+
   --modules wpscan,sqlmap,nuclei \
+  
   --output web_report.html
 ________________________________________
+
 Advanced Features
+
 1. Web Interface
 Access dashboard at: https://localhost:8443
 •	Default credentials: admin:ipaf@2024
@@ -127,26 +136,43 @@ Security Safeguards
 bash
 ipaf sanitize --input scan_results.db --output clean_data.db
 ________________________________________
+
 Troubleshooting
+
 1.	Dependency Issues:
+
 bash
+
 ipaf repair --fix-dependencies
-2.	Reset Framework:
+
+3.	Reset Framework:
 bash
+
 ipaf factory-reset
-3.	View Logs:
+
+4.	View Logs:
+   
 bash
+
 tail -f /var/log/ipaf/system.log
 ________________________________________
 Ethical Notice
 ⚠️ Legal Compliance:
+
 •	Use only on authorized targets
+
 •	Automatic watermarking in all reports
+
 •	Built-in --legal-check flag for compliance:
+
 bash
 
 ipaf scan network --target 10.0.2.0/24 --legal-check
+
 For full documentation:
+
 ipaf documentation --web (opens browser)
+
 or visit IPAF Wiki
+
 [Replace placeholder URLs with actual repository links if publicly available]
