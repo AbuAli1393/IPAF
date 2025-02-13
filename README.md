@@ -4,20 +4,35 @@
 Here's a comprehensive guide to install and use the IPAF (Integrated Pentest Automation Framework):
 ________________________________________
 Installation Guide
+
 Requirements
+
 •	Debian-based OS (Kali Linux/Ubuntu recommended)
+
 •	Root privileges
+
 •	4GB+ RAM (8GB recommended)
+
 •	20GB+ disk space
+
 •	Stable internet connection
+
 Step 1: Clone Repository
+
 bash
+
 cd opt/
+
 git clone https://github.com/Abdo.Mohammed/IPAF.git
+
 cd IPAF
+
 Step 2: Run Installer
+
 bash
+
 chmod +x install_ipaf.sh
+
 sudo ./install_ipaf.sh
 
 Installation Process Includes:
