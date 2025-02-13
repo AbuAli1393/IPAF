@@ -23,7 +23,7 @@ bash
 
 cd opt/
 
-git clone https://github.com/Abdo.Mohammed/IPAF.git
+git clone https://github.com/AbuAli1393/IPAF.git
 
 cd IPAF
 
